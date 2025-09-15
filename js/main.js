@@ -124,7 +124,7 @@
         spaceBetween: 20,
         loop: true,
         autoplay: {
-            delay: 2000,
+            delay: 202200,
             disableOnInteraction: false,
         },
         grabCursor: true, // يخلي الماوس Drag
@@ -134,5 +134,46 @@
             576: { slidesPerView: 2 }
         }
     });
+
+
+    // Our Clients Swiper
+    $(document).ready(function () {
+        const clientsImages = [
+            ["awtad.jpg", "اوتاد الفهد للمقاولات"],
+            ["albaik-resaurent.png", "سلسلة مطاعم البيك"],
+            ["amanat-hail.png", "أمانة منطقة حائل"],
+            ["hail-zone.png", "حائل زون"],
+            ["king-khaled.jpg", "مستشفي الملك خالد"],
+            ["Kudu-logo.svg", "سلسلة مطاعم كودو"],
+            ["dunkin.svg", "دانكن"],
+            ["bank-albilad.png", "بنك البلاد"],
+            ["othaim-logo.svg", "اسواق العثيم"],
+            ["anwar-hospital.png", "مستشفي الانوار الطبي"],
+            ["saknai-hotel.png", "فندق سكناي"]
+        ];
+
+
+        var client = document.getElementsByClassName("swiper-wrapper")[0];
+        let slides = "";
+        for (let i = 0; i < clientsImages.length; i++) {
+            slides += `<div class="swiper-slide">
+                            <div class="image-parent">
+                                <img src="./img/clients/${clientsImages[i][0]}" alt="Logo ${i}" />
+                            </div>
+                            <p>${clientsImages[i][1]}</p>
+                        </div>
+                        `
+                ;
+        }
+
+        client.innerHTML = slides;
+    });
+
+
+
+
+
+
+
 })(jQuery);
 
