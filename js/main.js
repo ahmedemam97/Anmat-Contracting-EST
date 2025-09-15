@@ -32,23 +32,18 @@
         $(window).scroll(function () {
             if ($(this).scrollTop() > 300) {
                 $('.back-to-top').addClass('show');
-                // رفع WhatsApp أعلى 70px عن الأسفل
                 $('.whatsapp-btn').css('bottom', '100px');
             } else {
-                // اخفاء Back to Top
                 $('.back-to-top').removeClass('show');
-                // إعادة WhatsApp لمكانه الأصلي
                 $('.whatsapp-btn').css('bottom', '30px');
             }
         });
 
-        // الضغط على Back to Top
         $('.back-to-top').click(function (e) {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
-        // الضغط على واتساب
         $('.whatsapp-btn').click(function () {
             window.open($(this).attr('href'), '_blank');
         });
@@ -59,7 +54,6 @@
 
     $(document).ready(function () {
 
-        // اظهار Back to Top عند النزول
         $(window).scroll(function () {
             if ($(this).scrollTop() > 300) {
                 $('.back-to-top').addClass('show');
@@ -68,12 +62,10 @@
             }
         });
 
-        // الضغط على Back to Top
         $('.back-to-top').click(function (e) {
             e.preventDefault();
             let icon = $(this).find("i");
 
-            // تشغيل أنيميشن الإطلاق
             icon.addClass("clicked");
 
             setTimeout(() => {
@@ -83,7 +75,6 @@
             $('html, body').animate({ scrollTop: 0 }, 800, 'easeInOutExpo');
         });
 
-        // الضغط على واتساب يفتح الرابط فقط
         $('.whatsapp-btn').click(function () {
             window.open($(this).attr('href'), '_blank');
         });
@@ -120,14 +111,14 @@
 
     // Carousel 
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 6,     // عدد اللوغوهات في الديسكتوب
+        slidesPerView: 6,
         spaceBetween: 20,
         loop: true,
         autoplay: {
             delay: 202200,
             disableOnInteraction: false,
         },
-        grabCursor: true, // يخلي الماوس Drag
+        grabCursor: true,
         breakpoints: {
             992: { slidesPerView: 6 },
             768: { slidesPerView: 4 },

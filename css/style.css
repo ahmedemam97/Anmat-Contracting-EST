@@ -113,7 +113,7 @@
 /* WhatsApp Button */
 .whatsapp-btn {
   position: fixed;
-  bottom: 30px; /* افتراضي متساوي مع Back to Top */
+  bottom: 30px;
   right: 30px;
   width: 50px;
   height: 50px;
@@ -126,7 +126,7 @@
   background: #25d366;
   z-index: 9999;
   cursor: pointer;
-  transition: bottom 0.4s ease; /* تحريك سلس */
+  transition: bottom 0.4s ease;
   box-shadow: 0 4px 15px rgba(37, 211, 102, 0.5);
   animation: bounceWhatsapp 2s infinite;
 }
@@ -147,7 +147,6 @@
   box-shadow: 0 0 25px rgba(37, 211, 102, 0.9);
 }
 
-/* أنيميشن منفصل للواتساب */
 @keyframes bounceWhatsapp {
   0%,
   20%,
@@ -164,7 +163,6 @@
   }
 }
 
-/* الأنيميشنات المشتركة للزر */
 @keyframes gradientFlow {
   0% {
     background-position: 0% 50%;
@@ -205,7 +203,6 @@
   }
 }
 
-/* Launch + shrink عند الضغط */
 .back-to-top.clicked i {
   animation: launchShrink 0.8s forwards;
 }
@@ -293,10 +290,6 @@
   top: -100px;
   transition: 0.5s;
 }
-
-/* .navbar-expand-lg .navbar-collapse {
-  justify-content: end;
-} */
 
 .navbar .navbar-brand img {
   max-height: 60px;
@@ -791,42 +784,6 @@
   }
 }
 
-/* Start Our Clients */
-/* #partner-logos .partner-slider {
-  overflow: hidden;
-}
-
-#partner-logos .partner-track {
-  display: flex;
-  width: calc(25% * 8);
-  animation: slide-scroll 20s linear infinite;
-}
-
-#partner-logos .partner-slide {
-  width: 25%;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10px;
-}
-
-#partner-logos .partner-slide img {
-  max-width: 100%;
-  object-fit: contain;
-}
-
-@keyframes slide-scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  } 
-} */
-
-/* End Our Clients */
-
 .nav-parent {
   display: flex;
 }
@@ -883,14 +840,12 @@
   justify-content: space-evenly;
   align-items: center;
   height: 250px;
-  /* width: 200px; */
   min-width: 180px;
   background-color: #efefef;
   border-radius: 5px;
   margin: 0;
   padding: 10px 15px;
   box-shadow: 9px 12px 12px -10px;
-  /* position: relative; */
 }
 .swiper-slide .image-parent {
   height: 150px;
