@@ -115,7 +115,7 @@
         spaceBetween: 20,
         loop: true,
         autoplay: {
-            delay: 202200,
+            delay: 2000,
             disableOnInteraction: false,
         },
         grabCursor: true,

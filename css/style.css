@@ -820,7 +820,26 @@
 /* Logo Carousel */
 .logo-slider {
   padding: 2rem 0;
-  background-color: #f6f7f8;
+  /* background-color: #f6f7f8; */
+  background-image: url(../img/carousel-1.jpg);
+  background-size: cover;
+  /* position: fixed; */
+  position: relative;
+  z-index: 1;
+  background-attachment: fixed; /* دي اللي بتعمل الحركة */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo-slider::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(1, 10, 53, 0.8);
+  z-index: -1;
 }
 
 .swiper {
@@ -841,11 +860,24 @@
   align-items: center;
   height: 250px;
   min-width: 180px;
-  background-color: #efefef;
-  border-radius: 5px;
+  background: linear-gradient(135deg, #f0f4f8, #d9e4ec); /* هادي ورايق */
+  border-radius: 12px;
   margin: 0;
   padding: 10px 15px;
-  box-shadow: 9px 12px 12px -10px;
+  transition: all 0.5s ease;
+  box-shadow: 6px 8px 12px -6px rgba(0, 0, 0, 0.1);
+  color: #2c3e50; /* لون خط غامق شوية عشان يبان */
+}
+
+.swiper-slide:hover {
+  transform: scale(1.08);
+  background: rgba(255, 255, 255, 0.2); /* زجاجي ناعم */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.swiper-slide:hover p {
+  color: white;
 }
 .swiper-slide .image-parent {
   height: 150px;
@@ -853,22 +885,18 @@
   display: flex;
   align-items: center;
 }
+
 .swiper-slide .image-parent img {
   max-height: calc(100% - 10px);
   max-width: 100%;
   object-fit: contain;
-  transition: transform 0.3s ease;
   border-radius: 5px;
 }
+
 .swiper-slide p {
   text-align: end;
   text-align: center;
-  transition: transform 0.3s ease;
   font-size: 20px;
-}
-.swiper-slide:hover .image-parent img,
-.swiper-slide:hover p {
-  transform: scale(1.1);
 }
 
 @media (max-width: 767px) {
