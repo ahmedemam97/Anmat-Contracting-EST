@@ -11,10 +11,8 @@
     };
     spinner();
 
-
     // Initiate the wowjs
     new WOW().init();
-
 
     // Sticky Navbar
     $(window).scroll(function () {
@@ -24,7 +22,6 @@
             $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
         }
     });
-
 
     // Back to top button
     $(document).ready(function () {
@@ -51,7 +48,6 @@
     });
 
     // Whats App Icon
-
     $(document).ready(function () {
 
         $(window).scroll(function () {
@@ -82,9 +78,6 @@
     });
 
 
-
-
-
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
@@ -106,9 +99,6 @@
         ]
     });
 
-
-
-
     // Carousel 
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 6,
@@ -126,7 +116,6 @@
         }
     });
 
-
     // Our Clients Swiper
     $(document).ready(function () {
         const clientsImages = [
@@ -143,7 +132,6 @@
             ["saknai-hotel.png", "فندق سكناي"]
         ];
 
-
         var client = document.getElementsByClassName("swiper-wrapper")[0];
         let slides = "";
         for (let i = 0; i < clientsImages.length; i++) {
@@ -159,12 +147,5 @@
 
         client.innerHTML = slides;
     });
-
-
-
-
-
-
-
 })(jQuery);
 

@@ -10,6 +10,32 @@
   font-family: "Noto Sans Arabic", sans-serif !important;
 }
 
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #994747, #bbbaba);
+  border-radius: 10px;
+  border: 2px solid #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #555, #777);
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--dark);
+}
+
 /* Back To Top Arrow */
 /* Back to Top */
 .back-to-top {
@@ -820,13 +846,11 @@
 /* Logo Carousel */
 .logo-slider {
   padding: 2rem 0;
-  /* background-color: #f6f7f8; */
   background-image: url(../img/carousel-1.jpg);
   background-size: cover;
-  /* position: fixed; */
   position: relative;
   z-index: 1;
-  background-attachment: fixed; /* دي اللي بتعمل الحركة */
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -860,18 +884,18 @@
   align-items: center;
   height: 250px;
   min-width: 180px;
-  background: linear-gradient(135deg, #f0f4f8, #d9e4ec); /* هادي ورايق */
+  background: linear-gradient(135deg, #f0f4f8, #d9e4ec);
   border-radius: 12px;
   margin: 0;
   padding: 10px 15px;
   transition: all 0.5s ease;
   box-shadow: 6px 8px 12px -6px rgba(0, 0, 0, 0.1);
-  color: #2c3e50; /* لون خط غامق شوية عشان يبان */
+  color: #2c3e50;
 }
 
 .swiper-slide:hover {
   transform: scale(1.08);
-  background: rgba(255, 255, 255, 0.2); /* زجاجي ناعم */
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.3);
