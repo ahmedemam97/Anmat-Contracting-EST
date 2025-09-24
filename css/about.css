@@ -1,0 +1,70 @@
+:root {
+  --primary: #ff800f;
+  --secondary: #083889;
+  --light: #f6f7f8;
+  --dark: #010a35;
+}
+
+.about-page {
+  padding: 50px 0 70px;
+}
+
+@media (max-width: 575px) {
+  .about-page {
+    padding: 50px 30px 70px;
+  }
+}
+
+.about-page .who {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.about-page .who .text {
+  flex: 1;
+  min-width: 250px;
+  text-align: end;
+}
+
+.about-page .who .text h2 {
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+.about-page .who .image-div {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  max-width: 700px;
+}
+
+.about-page .who .image-div img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px !important;
+  object-fit: cover;
+}
+
+/* Experience */
+.experience {
+  padding: 100px 0;
+}
+.experience .container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.experience .container .exp-div h4 {
+  color: var(--secondary);
+}
+
+.experience .container .exp-div svg {
+  color: var(--secondary);
+  width: 75px;
+  margin-bottom: 20px;
+}

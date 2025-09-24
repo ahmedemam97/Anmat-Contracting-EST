@@ -1,371 +1,444 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>AirCon - AC Repair Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+<html lang="ar">
+  <head>
+    <meta charset="utf-8" />
+    <title>مؤسسة انماط المعمار</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link
+      href="./img/hvac-logo-heating-cooling-icon-600nw-2497703445.webp"
+      rel="icon"
+      type="image/x-icon"
+    />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@-11..11,200..1000&family=Jomhuria&family=Kufam:ital,wght@0,400..900;1,400..900&family=Noto+Sans+Arabic:wght@100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome (Latest) -->
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/animate/animate.min.css" rel="stylesheet" />
+    <link
+      href="../lib/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+    <link href="../css/style.css" rel="stylesheet" />
 
-<body>
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+  </head>
+
+  <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" role="status"></div>
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
 
-
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block">
-        <div class="row gx-0 align-items-center">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <small class="fa fa-phone-alt me-2"></small>
-                    <small>+012 345 6789</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <small class="far fa-envelope-open me-2"></small>
-                    <small>info@example.com</small>
-                </div>
-            </div>
-            <div class="col-lg-5 px-5 text-end">
-                <ol class="breadcrumb justify-content-end mb-0">
-                    <li class="breadcrumb-item"><a class="text-white-50 small" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white-50 small" href="#">Terms</a></li>
-                    <li class="breadcrumb-item"><a class="text-white-50 small" href="#">Privacy</a></li>
-                    <li class="breadcrumb-item"><a class="text-white-50 small" href="#">Support</a></li>
-                </ol>
-            </div>
+    <div
+      class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block"
+      dir="rtl"
+    >
+      <div class="row gx-0 align-items-center nav-parent">
+        <div class="col-lg-7 px-5 text-start d-flex justify-content-evenly">
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <!-- <small class="fa fa-phone-alt me-2"></small> -->
+            <img
+              src="../img/icon/phone-solid-full.svg"
+              class="topbar-icon"
+              alt=""
+            />
+            <small>+966558727010</small>
+          </div>
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <!-- <small class="far fa-envelope-open me-2"></small> -->
+            <img
+              src="../img/icon/envelope-solid-full.svg"
+              class="topbar-icon"
+              alt=""
+            />
+            <small>anmatalmemar.est.contracting@gmail.com</small>
+          </div>
         </div>
+        <div class="col-lg-5 px-5 text-end">
+          <ol class="breadcrumb justify-content-end mb-0">
+            <li class="breadcrumb-item">
+              <a class="text-white-50 small" href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="text-white-50 small" href="#">Terms</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="text-white-50 small" href="#">Privacy</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="text-white-50 small" href="#">Support</a>
+            </li>
+          </ol>
+        </div>
+      </div>
     </div>
     <!-- Topbar End -->
 
-
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
-        <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h1 class="m-0"><img class="img-fluid me-3" src="img/icon/icon-02-primary.png" alt="">AirCon</h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav mx-auto bg-light pe-4 py-3 py-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link active">About Us</a>
-                <a href="service.html" class="nav-item nav-link">Our Services</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu bg-light border-0 m-0">
-                        <a href="feature.html" class="dropdown-item">Features</a>
-                        <a href="quote.html" class="dropdown-item">Free Quote</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5"
+      dir="rtl"
+    >
+      <a href="../index.html" class="navbar-brand d-flex align-items-center">
+        <h1 class="m-0">
+          <img
+            class="img-fluid"
+            src="../img/hvac-logo-heating-cooling-icon-600nw-2497703445.webp"
+            alt=""
+          />أنماط المعمار
+        </h1>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto bg-light pe-4 py-3 py-lg-0">
+          <a href="../index.html" class="nav-item nav-link active">الرئيسية</a>
+          <a href="../pages/about.html" class="nav-item nav-link">من نحن</a>
+          <a href="../pages/service.html" class="nav-item nav-link">خدماتنا</a>
+          <!-- <div class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >صفحات</a
+            >
+            <div class="dropdown-menu bg-light border-0 m-0">
+              <a href="feature.html" class="dropdown-item">المميزات</a>
+              <a href="quote.html" class="dropdown-item">طلب عرض سعر</a>
+              <a href="team.html" class="dropdown-item">فريقنا</a>
+              <a href="testimonial.html" class="dropdown-item">آراء العملاء</a>
+              <a href="404.html" class="dropdown-item">صفحة 404</a>
             </div>
-            <div class="h-100 d-lg-inline-flex align-items-center d-none">
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
-            </div>
+          </div> -->
+          <a href="../pages/contact.html" class="nav-item nav-link"
+            >تواصل معنا</a
+          >
         </div>
+
+        <!-- Download PDF -->
+        <div class="d-lg-inline-block ms-3">
+          <a
+            href="../img/anmat-imgs/Anmat-Almamar.pdf"
+            download="Company-Profile.pdf"
+            class="btn btn-primary px-4"
+          >
+            تحميل البروفايل
+          </a>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="h-100 d-lg-inline-flex align-items-center d-none">
+          <a
+            class="btn btn-square rounded-circle bg-light text-primary ms-3"
+            href=""
+          >
+            <img src="../img/icon/facebook-f-brands-solid-full (1).svg" alt=""
+          /></a>
+          <a
+            class="btn btn-square rounded-circle bg-light text-primary ms-3"
+            href=""
+            ><img src="../img/icon/instagram-brands-solid-full.svg" alt=""
+          /></a>
+          <a
+            class="btn btn-square rounded-circle bg-light text-primary ms-0"
+            href=""
+            ><img src="../img/icon/twitter-brands-solid-full.svg" alt=""
+          /></a>
+        </div>
+      </div>
     </nav>
+
     <!-- Navbar End -->
 
-
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center py-5">
-            <h1 class="display-4 text-white animated slideInDown mb-4">About Us</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">About</li>
-                </ol>
-            </nav>
+    <!-- Start About -->
+    <div class="about-page container">
+      <div class="who">
+        <div class="text">
+          <h2>!من نحن؟</h2>
+          <p>
+            نحن مؤسسة إنماط المعمار للمقاولات، متخصصون في تقديم حلول بناء
+            وتشطيبات عالية الجودة منذ عام ....، ونسعى لتقديم أفضل الخدمات بما
+            يتماشى مع تطلعات عملائنا.
+          </p>
         </div>
-    </div>
-    <!-- Page Header End -->
 
-
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="h-100">
-                        <h1 class="display-6 mb-5">Welcome To Best Cooling & Heating Service Center</h1>
-                        <div class="row g-4 mb-4">
-                            <div class="col-sm-6">
-                                <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0 me-3" src="img/icon/icon-07-primary.png" alt="">
-                                    <h5 class="mb-0">Expert Technician</h5>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0 me-3" src="img/icon/icon-09-primary.png" alt="">
-                                    <h5 class="mb-0">Best Quality Services</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <div class="border-top mt-4 pt-4">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="d-flex align-items-center">
-                                        <div class="btn-lg-square bg-primary rounded-circle me-3">
-                                            <i class="fa fa-phone-alt text-white"></i>
-                                        </div>
-                                        <h5 class="mb-0">+012 345 6789</h5>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="d-flex align-items-center">
-                                        <div class="btn-lg-square bg-primary rounded-circle me-3">
-                                            <i class="fa fa-envelope text-white"></i>
-                                        </div>
-                                        <h5 class="mb-0">info@example.com</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row g-3">
-                        <div class="col-6 text-end">
-                            <img class="img-fluid w-75 wow zoomIn" data-wow-delay="0.1s" src="img/about-1.jpg" style="margin-top: 25%;">
-                        </div>
-                        <div class="col-6 text-start">
-                            <img class="img-fluid w-100 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.jpg">
-                        </div>
-                        <div class="col-6 text-end">
-                            <img class="img-fluid w-50 wow zoomIn" data-wow-delay="0.5s" src="img/about-3.jpg">
-                        </div>
-                        <div class="col-6 text-start">
-                            <img class="img-fluid w-75 wow zoomIn" data-wow-delay="0.7s" src="img/about-4.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="image-div">
+          <img src="../img/anmat-imgs/workers-1.jpg" class="rounded" alt="" />
         </div>
+      </div>
     </div>
-    <!-- About End -->
+    <!-- End About -->
 
+    <!-- Start Experience -->
+    <div class="experience">
+      <div class="container">
+        <div class="exp-div">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              fill="#083889"
+              d="M341.9 38.1C328.5 29.9 311.6 29.9 298.2 38.1C273.8 53 258.7 57 230.1 56.4C214.4 56 199.8 64.5 192.2 78.3C178.5 103.4 167.4 114.5 142.3 128.2C128.5 135.7 120.1 150.4 120.4 166.1C121.1 194.7 117 209.8 102.1 234.2C93.9 247.6 93.9 264.5 102.1 277.9C117 302.3 121 317.4 120.4 346C120 361.7 128.5 376.3 142.3 383.9C164.4 396 175.6 406 187.4 425.4L138.7 522.5C132.8 534.4 137.6 548.8 149.4 554.7L235.4 597.7C246.9 603.4 260.9 599.1 267.1 587.9L319.9 492.8L372.7 587.9C378.9 599.1 392.9 603.5 404.4 597.7L490.4 554.7C502.3 548.8 507.1 534.4 501.1 522.5L452.5 425.3C464.2 405.9 475.5 395.9 497.6 383.8C511.4 376.3 519.8 361.6 519.5 345.9C518.8 317.3 522.9 302.2 537.8 277.8C546 264.4 546 247.5 537.8 234.1C522.9 209.7 518.9 194.6 519.5 166C519.9 150.3 511.4 135.7 497.6 128.1C472.5 114.4 461.4 103.3 447.7 78.2C440.2 64.4 425.5 56 409.8 56.3C381.2 57 366.1 52.9 341.7 38zM320 160C373 160 416 203 416 256C416 309 373 352 320 352C267 352 224 309 224 256C224 203 267 160 320 160z"
+            />
+          </svg>
 
-    <!-- Facts Start -->
-    <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="text-primary">Happy Clients</span>
-                </div>
-                <div class="col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="text-primary">Projects Succeed</span>
-                </div>
-                <div class="col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="text-primary">Awards Achieved</span>
-                </div>
-                <div class="col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="text-primary">Team Members</span>
-                </div>
-            </div>
+          <h4>الخبرة</h4>
         </div>
-    </div>
-    <!-- Facts End -->
+        <div class="exp-div">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              fill="#083889"
+              d="M320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64zM296 184L296 320C296 328 300 335.5 306.7 340L402.7 404C413.7 411.4 428.6 408.4 436 397.3C443.4 386.2 440.4 371.4 429.3 364L344 307.2L344 184C344 170.7 333.3 160 320 160C306.7 160 296 170.7 296 184z"
+            />
+          </svg>
 
-
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h1 class="display-6 mb-5">Meet Our Professional Team Members</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5>Full Name</h5>
-                            <span class="text-primary">Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5>Full Name</h5>
-                            <span class="text-primary">Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5>Full Name</h5>
-                            <span class="text-primary">Designation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5>Full Name</h5>
-                            <span class="text-primary">Designation</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <h4>الألتزام</h4>
         </div>
-    </div>
-    <!-- Team End -->
+        <div class="exp-div">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              fill="#083889"
+              d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z"
+            />
+          </svg>
 
+          <h4>الجودة</h4>
+        </div>
+      </div>
+    </div>
+    <!-- End Experience -->
+
+    <!-- Our Projects -->
+    <div class="projects">
+      <div class="container">
+        <div class="show-project">
+          <div class="project-img">
+            <img src="../img/anmat-imgs/workers-5.jpg" alt="" />
+          </div>
+
+          <h4>أسم المشروع</h4>
+
+          <input type="text" class="btn btn-primary" placeholder="المزيد" />
+        </div>
+        <div class="show-project">
+          <div class="project-img">
+            <img src="../img/anmat-imgs/workers-5.jpg" alt="" />
+          </div>
+
+          <h4>أسم المشروع</h4>
+
+          <input type="text" class="btn btn-primary" placeholder="المزيد" />
+        </div>
+        <div class="show-project">
+          <div class="project-img">
+            <img src="../img/anmat-imgs/workers-5.jpg" alt="" />
+          </div>
+
+          <h4>أسم المشروع</h4>
+
+          <input type="text" class="btn btn-primary" placeholder="المزيد" />
+        </div>
+
+        <input
+          type="text"
+          placeholder="تحميل بروفايل الشركة"
+          class="btn btn-primary"
+        />
+      </div>
+    </div>
+    <!-- End Our Projects -->
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-md-6">
-                    <h1 class="text-white mb-4"><img class="img-fluid me-3" src="img/icon/icon-02-light.png" alt="">AirCon</h1>
-                    <span>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</span>
-                </div>
-                <div class="col-md-6">
-                    <h5 class="text-light mb-4">Newsletter</h5>
-                    <p>Clita erat ipsum et lorem et sit, sed stet lorem sit clita.</p>
-                    <div class="position-relative">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Get In Touch</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Our Services</h5>
-                    <a class="btn btn-link" href="">AC Installation</a>
-                    <a class="btn btn-link" href="">Cooling Services</a>
-                    <a class="btn btn-link" href="">Heating Services</a>
-                    <a class="btn btn-link" href="">Annual Inspections</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Follow Us</h5>
-                    <div class="d-flex">
-                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
+    <div
+      class="container-fluid bg-dark footer pt-5 wow fadeIn footer-div"
+      dir="rtl"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-7 col-md-7 d-lg-block w-100">
+            <h1 class="text-white mb-4 d-flex align-items-center">
+              <img
+                class="img-fluid ms-3"
+                src="../img/icon/icon-02-light.png"
+                alt=""
+              />
+              مؤسسة انماط المعمار للمقاولات
+            </h1>
+            <span class="w-75 d-md-inline-flex"
+              >نحن ملتزمون بتقديم أفضل الحلول الهندسية والمعمارية للمشاريع
+              السكنية والتجارية، مع فريق متخصص لضمان الجودة والكفاءة في كل
+              أعمالنا.</span
+            >
+          </div>
+          <!-- <div class="col-md-6">
+            <h5 class="text-light mb-4">النشرة الإخبارية</h5>
+            <p>
+              اشترك في نشرتنا الإخبارية لتصلك أحدث العروض والخدمات والأخبار
+              الخاصة بالشركة مباشرة إلى بريدك الإلكتروني.
+            </p>
+            <div class="position-relative">
+              <input
+                class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                type="text"
+                placeholder="الإيميل"
+              />
+              <button
+                type="button"
+                class="btn btn-primary py-2 px-3 position-absolute top-0 start-0 mt-2 ms-2"
+              >
+                التسجيل
+              </button>
             </div>
-        </div>
-        <div class="container-fluid copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Your Site Name</a>, All Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                    </div>
-                </div>
+          </div> -->
+          <div class="col-lg-4 col-md-7 contact-div">
+            <h5 class="text-light mb-4">ابقَ على تواصل معنا</h5>
+            <p class="d-flex">
+              <img
+                src="../img/icon/location-dot-solid-full.svg"
+                class="footer-img"
+                alt=""
+              />المملكة العربية السعودية - حائل - الشارع العام
+            </p>
+            <p>
+              <img
+                src="../img/icon/phone-solid-full (2).svg"
+                alt=""
+                class="footer-img"
+              />+966558727010
+            </p>
+            <p>
+              <img
+                src="../img/icon/envelope-solid-full (1).svg"
+                class="footer-img"
+                alt=""
+              />anmatalmemar.est.contracting@gmail.com
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">اكتشف خدماتنا المتكاملة</h5>
+            <a class="btn btn-link" href="">تركيب المكيفات</a>
+            <a class="btn btn-link" href="">خدمات التبريد</a>
+            <a class="btn btn-link" href="">خدمات التدفئة</a>
+            <a class="btn btn-link" href="">الفحوصات السنوية</a>
+            <a class="btn btn-link" href="">الأعمال الكهروميكانيكية</a>
+            <a class="btn btn-link" href="">جودة الهواء الداخلي</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">روابط سريعة</h5>
+            <a class="btn btn-link" href="">من نحن</a>
+            <a class="btn btn-link" href="">تواصل معنا</a>
+            <a class="btn btn-link" href="">خدماتنا</a>
+            <a class="btn btn-link" href="">الشروط والأحكام</a>
+          </div>
+
+          <div class="col-lg-2 col-md-5 social">
+            <h5 class="text-light mb-4">تابعنا</h5>
+            <div class="d-flex">
+              <a class="btn btn-square rounded-circle ms-1 p-1" href=""
+                ><img src="../img/icon/twitter-brands-solid-full.svg" alt=""
+              /></a>
+              <a class="btn btn-square rounded-circle ms-1 p-1" href=""
+                ><img src="../img/icon/instagram-brands-solid-full.svg" alt=""
+              /></a>
+              <!-- <a class="btn btn-square rounded-circle me-1" href=""
+                ><i class="fab fa-youtube"></i
+              ></a> -->
+              <a class="btn btn-square rounded-circle ms-1 p-1" href=""
+                ><img
+                  src="../img/icon/facebook-f-brands-solid-full (1).svg"
+                  alt=""
+              /></a>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="container-fluid copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; 2025 <a href="#">مؤسسة أنماط المعمار</a>، جميع الحقوق
+              محفوظة.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              تصميم وتطوير بواسطة
+              <a href="https://github.com/ahmedemam97">Eng\ Ahmed Emam</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="back-to-top">
+      <i class="bi bi-arrow-up"></i>
+    </a>
 
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/+966558727010" class="whatsapp-btn" target="_blank">
+      <i class="bi bi-whatsapp"></i>
+    </a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/counterup/counterup.min.js"></script>
+    <script src="../lib/parallax/parallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
-
+    <script src="../js/main.js"></script>
+  </body>
 </html>
