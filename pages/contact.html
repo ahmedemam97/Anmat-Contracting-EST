@@ -2,41 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>AirCon - AC Repair Website Template</title>
+    <title>مؤسسة انماط المعمار</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+    <link
+      href="./img/hvac-logo-heating-cooling-icon-600nw-2497703445.webp"
+      rel="icon"
+      type="image/x-icon"
+    />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@-11..11,200..1000&family=Jomhuria&family=Kufam:ital,wght@0,400..900;1,400..900&family=Noto+Sans+Arabic:wght@100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Icon Font Stylesheet -->
+    <!-- Font Awesome (Latest) -->
+    <!-- Font Awesome -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+
+    <!-- Bootstrap Icons -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
       rel="stylesheet"
     />
 
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="../lib/animate/animate.min.css" rel="stylesheet" />
+    <link
+      href="../lib/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
     <link href="../css/style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/about.css" />
   </head>
 
   <body>
@@ -52,16 +71,27 @@
     <!-- Topbar Start -->
     <div
       class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block"
+      dir="rtl"
     >
-      <div class="row gx-0 align-items-center">
-        <div class="col-lg-7 px-5 text-start">
+      <div class="row gx-0 align-items-center nav-parent">
+        <div class="col-lg-7 px-5 text-start d-flex justify-content-evenly">
           <div class="h-100 d-inline-flex align-items-center me-4">
-            <small class="fa fa-phone-alt me-2"></small>
-            <small>+012 345 6789</small>
+            <!-- <small class="fa fa-phone-alt me-2"></small> -->
+            <img
+              src="../img/icon/phone-solid-full.svg"
+              class="topbar-icon"
+              alt=""
+            />
+            <small>+966558727010</small>
           </div>
           <div class="h-100 d-inline-flex align-items-center me-4">
-            <small class="far fa-envelope-open me-2"></small>
-            <small>info@example.com</small>
+            <!-- <small class="far fa-envelope-open me-2"></small> -->
+            <img
+              src="../img/icon/envelope-solid-full.svg"
+              class="topbar-icon"
+              alt=""
+            />
+            <small>anmatalmemar.est.contracting@gmail.com</small>
           </div>
         </div>
         <div class="col-lg-5 px-5 text-end">
@@ -87,14 +117,15 @@
     <!-- Navbar Start -->
     <nav
       class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5"
+      dir="rtl"
     >
-      <a href="index.html" class="navbar-brand d-flex align-items-center">
+      <a href="../index.html" class="navbar-brand d-flex align-items-center">
         <h1 class="m-0">
           <img
-            class="img-fluid me-3"
-            src="img/icon/icon-02-primary.png"
+            class="img-fluid"
+            src="../img/hvac-logo-heating-cooling-icon-600nw-2497703445.webp"
             alt=""
-          />AirCon
+          />أنماط المعمار
         </h1>
       </a>
       <button
@@ -107,50 +138,62 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav mx-auto bg-light pe-4 py-3 py-lg-0">
-          <a href="index.html" class="nav-item nav-link">Home</a>
-          <a href="about.html" class="nav-item nav-link">About Us</a>
-          <a href="service.html" class="nav-item nav-link">Our Services</a>
-          <div class="nav-item dropdown">
+          <a href="../index.html" class="nav-item nav-link active">الرئيسية</a>
+          <a href="../pages/about.html" class="nav-item nav-link">من نحن</a>
+          <!-- <a href="../pages/service.html" class="nav-item nav-link">خدماتنا</a> -->
+          <!-- <div class="nav-item dropdown">
             <a
               href="#"
               class="nav-link dropdown-toggle"
               data-bs-toggle="dropdown"
-              >Pages</a
+              >صفحات</a
             >
             <div class="dropdown-menu bg-light border-0 m-0">
-              <a href="feature.html" class="dropdown-item">Features</a>
-              <a href="quote.html" class="dropdown-item">Free Quote</a>
-              <a href="team.html" class="dropdown-item">Our Team</a>
-              <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-              <a href="404.html" class="dropdown-item">404 Page</a>
+              <a href="feature.html" class="dropdown-item">المميزات</a>
+              <a href="quote.html" class="dropdown-item">طلب عرض سعر</a>
+              <a href="team.html" class="dropdown-item">فريقنا</a>
+              <a href="testimonial.html" class="dropdown-item">آراء العملاء</a>
+              <a href="404.html" class="dropdown-item">صفحة 404</a>
             </div>
-          </div>
-          <a href="contact.html" class="nav-item nav-link active">Contact Us</a>
+          </div> -->
+          <a href="../pages/contact.html" class="nav-item nav-link"
+            >تواصل معنا</a
+          >
         </div>
+
+        <!-- Download PDF -->
+        <div class="d-lg-inline-block ms-3">
+          <a
+            href="../img/anmat-imgs/Anmat-Almamar.pdf"
+            download="Company-Profile.pdf"
+            class="btn btn-primary px-4"
+          >
+            تحميل البروفايل
+          </a>
+        </div>
+
+        <!-- Social Media Icons -->
         <div class="h-100 d-lg-inline-flex align-items-center d-none">
           <a
-            class="btn btn-square rounded-circle bg-light text-primary me-2"
+            class="btn btn-square rounded-circle bg-light text-primary ms-3"
             href=""
-            ><i class="fab fa-facebook-f"></i
-          ></a>
+          >
+            <img src="../img/icon/facebook-f-brands-solid-full (1).svg" alt=""
+          /></a>
           <a
-            class="btn btn-square rounded-circle bg-light text-primary me-2"
+            class="btn btn-square rounded-circle bg-light text-primary ms-3"
             href=""
-            ><i class="fab fa-twitter"></i
-          ></a>
+            ><img src="../img/icon/instagram-brands-solid-full.svg" alt=""
+          /></a>
           <a
-            class="btn btn-square rounded-circle bg-light text-primary me-2"
+            class="btn btn-square rounded-circle bg-light text-primary ms-0"
             href=""
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-          <a
-            class="btn btn-square rounded-circle bg-light text-primary me-0"
-            href=""
-            ><i class="fab fa-instagram"></i
-          ></a>
+            ><img src="../img/icon/twitter-brands-solid-full.svg" alt=""
+          /></a>
         </div>
       </div>
     </nav>
+
     <!-- Navbar End -->
 
     <!-- Page Header Start -->
@@ -160,13 +203,15 @@
     >
       <div class="container text-center py-5">
         <h1 class="display-4 text-white animated slideInDown mb-4">
-          Contact Us
+          تواصل معنا
         </h1>
         <nav aria-label="breadcrumb animated slideInDown">
           <ol class="breadcrumb justify-content-center mb-0">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Pages</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Contact</li>
+            <!-- <li class="breadcrumb-item"><a href="#">Pages</a></li> -->
+            <li class="breadcrumb-item active" aria-current="page">
+              تواصل معنا
+            </li>
+            <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
           </ol>
         </nav>
       </div>
@@ -177,17 +222,24 @@
     <div class="container-xxl py-5">
       <div class="container">
         <div class="row g-5">
-          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-            <h1 class="display-6 mb-5">
-              If You Have Any Query, Please Contact Us
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" dir="rtl">
+            <h1 class="display-6 mb-5 contact-header">
+              اذا كان لديك اي استفسارات رجاءاَ تواصل معنا.
             </h1>
-            <p class="mb-4">
+
+            <p>رقم الجوال: +966558727010</p>
+            <p>الإيميل: anmatalmemar.est.contracting@gmail.com</p>
+            <p>
+              العنوان: المملكة العربية السعودية - حائل - الصناعية الجديدة خلف
+              شركة البسامي
+            </p>
+            <!-- <p class="mb-4">
               The contact form is currently inactive. Get a functional and
               working contact form with Ajax & PHP in a few minutes. Just copy
               and paste the files, add a little code and you're done.
               <a href="https://htmlcodex.com/contact-form">Download Now</a>.
-            </p>
-            <form>
+            </p> -->
+            <!-- <form>
               <div class="row g-3">
                 <div class="col-md-6">
                   <div class="form-floating">
@@ -239,10 +291,10 @@
                   </button>
                 </div>
               </div>
-            </form>
+            </form> -->
           </div>
           <div
-            class="col-lg-6 wow fadeIn"
+            class="col-lg-6 wow fadeIn text-center"
             data-wow-delay="0.5s"
             style="min-height: 450px"
           >
@@ -265,80 +317,105 @@
 
     <!-- Footer Start -->
     <div
-      class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn"
+      class="container-fluid bg-dark footer pt-5 wow fadeIn footer-div"
+      dir="rtl"
       data-wow-delay="0.1s"
     >
       <div class="container py-5">
         <div class="row g-5">
-          <div class="col-md-6">
-            <h1 class="text-white mb-4">
+          <div class="col-lg-7 col-md-7 d-lg-block w-100">
+            <h1 class="text-white mb-4 d-flex align-items-center">
               <img
-                class="img-fluid me-3"
-                src="img/icon/icon-02-light.png"
+                class="img-fluid ms-3"
+                src="../img/icon/icon-02-light.png"
                 alt=""
-              />AirCon
+              />
+              مؤسسة انماط المعمار للمقاولات
             </h1>
-            <span
-              >Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita
-              erat ipsum et lorem et sit, sed stet lorem sit clita. Diam dolor
-              diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et
-              lorem et sit.</span
+            <span class="w-75 d-md-inline-flex"
+              >نحن ملتزمون بتقديم أفضل الحلول الهندسية والمعمارية للمشاريع
+              السكنية والتجارية، مع فريق متخصص لضمان الجودة والكفاءة في كل
+              أعمالنا.</span
             >
           </div>
-          <div class="col-md-6">
-            <h5 class="text-light mb-4">Newsletter</h5>
-            <p>Clita erat ipsum et lorem et sit, sed stet lorem sit clita.</p>
+          <!-- <div class="col-md-6">
+            <h5 class="text-light mb-4">النشرة الإخبارية</h5>
+            <p>
+              اشترك في نشرتنا الإخبارية لتصلك أحدث العروض والخدمات والأخبار
+              الخاصة بالشركة مباشرة إلى بريدك الإلكتروني.
+            </p>
             <div class="position-relative">
               <input
                 class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
                 type="text"
-                placeholder="Your email"
+                placeholder="الإيميل"
               />
               <button
                 type="button"
-                class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2"
+                class="btn btn-primary py-2 px-3 position-absolute top-0 start-0 mt-2 ms-2"
               >
-                SignUp
+                التسجيل
               </button>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Get In Touch</h5>
-            <p>
-              <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA
+          </div> -->
+          <div class="col-lg-4 col-md-7 contact-div">
+            <h5 class="text-light mb-4">ابقَ على تواصل معنا</h5>
+            <p class="d-flex">
+              <img
+                src="../img/icon/location-dot-solid-full.svg"
+                class="footer-img"
+                alt=""
+              />المملكة العربية السعودية - حائل - الشارع العام
             </p>
-            <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-            <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+            <p>
+              <img
+                src="../img/icon/phone-solid-full (2).svg"
+                alt=""
+                class="footer-img"
+              />+966558727010
+            </p>
+            <p>
+              <img
+                src="../img/icon/envelope-solid-full (1).svg"
+                class="footer-img"
+                alt=""
+              />anmatalmemar.est.contracting@gmail.com
+            </p>
           </div>
           <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Our Services</h5>
-            <a class="btn btn-link" href="">AC Installation</a>
-            <a class="btn btn-link" href="">Cooling Services</a>
-            <a class="btn btn-link" href="">Heating Services</a>
-            <a class="btn btn-link" href="">Annual Inspections</a>
+            <h5 class="text-light mb-4">اكتشف خدماتنا المتكاملة</h5>
+            <a class="btn btn-link" href="">تركيب المكيفات</a>
+            <a class="btn btn-link" href="">خدمات التبريد</a>
+            <a class="btn btn-link" href="">خدمات التدفئة</a>
+            <a class="btn btn-link" href="">الفحوصات السنوية</a>
+            <a class="btn btn-link" href="">الأعمال الكهروميكانيكية</a>
+            <a class="btn btn-link" href="">جودة الهواء الداخلي</a>
           </div>
           <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Quick Links</h5>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Our Services</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
+            <h5 class="text-light mb-4">روابط سريعة</h5>
+            <a class="btn btn-link" href="">من نحن</a>
+            <a class="btn btn-link" href="">تواصل معنا</a>
+            <a class="btn btn-link" href="">خدماتنا</a>
+            <a class="btn btn-link" href="">الشروط والأحكام</a>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Follow Us</h5>
+
+          <div class="col-lg-2 col-md-5 social">
+            <h5 class="text-light mb-4">تابعنا</h5>
             <div class="d-flex">
-              <a class="btn btn-square rounded-circle me-1" href=""
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a class="btn btn-square rounded-circle me-1" href=""
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a class="btn btn-square rounded-circle me-1" href=""
+              <a class="btn btn-square rounded-circle ms-1 p-1" href=""
+                ><img src="../img/icon/twitter-brands-solid-full.svg" alt=""
+              /></a>
+              <a class="btn btn-square rounded-circle ms-1 p-1" href=""
+                ><img src="../img/icon/instagram-brands-solid-full.svg" alt=""
+              /></a>
+              <!-- <a class="btn btn-square rounded-circle me-1" href=""
                 ><i class="fab fa-youtube"></i
-              ></a>
-              <a class="btn btn-square rounded-circle me-1" href=""
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
+              ></a> -->
+              <a class="btn btn-square rounded-circle ms-1 p-1" href=""
+                ><img
+                  src="../img/icon/facebook-f-brands-solid-full (1).svg"
+                  alt=""
+              /></a>
             </div>
           </div>
         </div>
@@ -347,11 +424,12 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+              &copy; 2025 <a href="#">مؤسسة أنماط المعمار</a>، جميع الحقوق
+              محفوظة.
             </div>
             <div class="col-md-6 text-center text-md-end">
-              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-              Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+              تصميم وتطوير بواسطة
+              <a href="https://github.com/ahmedemam97">Eng\ Ahmed Emam</a>
             </div>
           </div>
         </div>
