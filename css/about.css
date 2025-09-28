@@ -54,6 +54,20 @@
   object-fit: cover;
 }
 
+#carouselHeader .carousel-item {
+  min-width: 250px;
+  max-width: 700px;
+  max-height: 400px;
+}
+
+/* الصور داخل الكاروسيل */
+#carouselHeader .carousel-item img {
+  width: 100%;
+  height: 400px; /* 👈 سبّت الارتفاع */
+  object-fit: cover; /* يخلي كل الصور تملأ نفس الإطار */
+  border-radius: 10px;
+}
+
 /* Experience */
 .experience {
   padding: 50px 0 100px;
@@ -105,21 +119,18 @@
   padding-bottom: 100px;
 }
 .projects .container .parent {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   margin-bottom: 50px;
   gap: 20px;
 }
 
 .projects .container .parent .show-project {
-  width: 30%;
   text-align: center;
-  width: 30%;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 250px;
 }
 
 @media (max-width: 991px) {
@@ -127,14 +138,7 @@
     flex-wrap: wrap;
   }
   .projects .container .parent .show-project {
-    width: 40%;
     margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 767px) {
-  .projects .container .parent .show-project {
-    width: 80%;
   }
 }
 
