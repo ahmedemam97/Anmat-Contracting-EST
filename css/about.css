@@ -56,7 +56,7 @@
 
 /* Experience */
 .experience {
-  padding: 100px 0;
+  padding: 50px 0 100px;
 }
 
 .experience .container {
@@ -65,6 +65,17 @@
   text-align: center;
   padding: 0 100px;
   position: relative;
+}
+
+@media (max-width: 500px) {
+  .experience .container {
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+  }
+  .experience .container .exp-div svg {
+    width: 50px !important;
+  }
 }
 
 .experience .container::before {
