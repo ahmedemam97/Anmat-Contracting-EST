@@ -318,7 +318,7 @@ html {
 }
 
 .navbar .navbar-brand img {
-  max-height: 60px;
+  max-height: 50px;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -358,7 +358,7 @@ html {
   margin-left: 10px;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1055px) {
   .navbar .navbar-brand img {
     max-height: 45px;
   }
@@ -373,7 +373,7 @@ html {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1056px) {
   .navbar .nav-item .dropdown-menu {
     display: block;
     border: none;
@@ -393,7 +393,7 @@ html {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1055px) {
   .dropdown-item {
     display: flex;
     justify-content: start;
@@ -404,6 +404,12 @@ html {
     border-radius: 5px;
     background-color: #eee3d9;
     border-right: solid 1px #ff800f;
+  }
+}
+
+@media (max-width: 1265px) {
+  nav a h1 {
+    font-size: 20px;
   }
 }
 
