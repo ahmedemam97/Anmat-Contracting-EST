@@ -117,35 +117,64 @@
     });
 
     // Our Clients Swiper
-    $(document).ready(function () {
-        const clientsImages = [
-            ["awtad.jpg", "اوتاد الفهد للمقاولات"],
-            ["albaik-resaurent.png", "سلسلة مطاعم البيك"],
-            ["amanat-hail.png", "أمانة منطقة حائل"],
-            ["hail-zone.png", "حائل زون"],
-            ["king-khaled.jpg", "مستشفي الملك خالد"],
-            ["Kudu-logo.svg", "سلسلة مطاعم كودو"],
-            ["dunkin.svg", "دانكن"],
-            ["bank-albilad.png", "بنك البلاد"],
-            ["othaim-logo.svg", "اسواق العثيم"],
-            ["anwar-hospital.png", "مستشفي الانوار الطبي"],
-            ["saknai-hotel.png", "فندق سكناي"]
-        ];
+    // Carousel 
+    const clientsImages = [
+        ["awtad.jpg", "اوتاد الفهد للمقاولات"],
+        ["albaik-resaurent.png", "سلسلة مطاعم البيك"],
+        ["amanat-hail.png", "أمانة منطقة حائل"],
+        ["hail-zone.png", "حائل زون"],
+        ["king-khaled.jpg", "مستشفي الملك خالد"],
+        ["Kudu-logo.svg", "سلسلة مطاعم كودو"],
+        ["dunkin.svg", "دانكن"],
+        ["bank-albilad.png", "بنك البلاد"],
+        ["othaim-logo.svg", "اسواق العثيم"],
+        ["anwar-hospital.png", "مستشفي الانوار الطبي"],
+        ["saknai-hotel.png", "فندق سكناي"],
+        ["nahdi.png", "صيدليات النهدي"]
+    ];
 
-        var client = document.getElementsByClassName("swiper-wrapper")[0];
-        let slides = "";
-        for (let i = 0; i < clientsImages.length; i++) {
-            slides += `<div class="swiper-slide">
-                            <div class="image-parent">
-                                <img src="./img/clients/${clientsImages[i][0]}" alt="Logo ${i}" />
-                            </div>
-                            <p>${clientsImages[i][1]}</p>
-                        </div>
-                        `
-                ;
-        }
+    const wrapper = document.querySelector(".swiper-wrapper");
 
-        client.innerHTML = slides;
+    // إضافة السلايدز
+    clientsImages.forEach(([img, name]) => {
+        const slide = `
+            <div class="swiper-slide logo-fade">
+                <div class="image-parent">
+                    <img loading="lazy" src="./img/clients/${img}" alt="${name}" />
+                </div>
+                <p>${name}</p>
+            </div>
+        `;
+        wrapper.insertAdjacentHTML("beforeend", slide);
     });
+
+    // Swiper
+    const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 6,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        grabCursor: true,
+        breakpoints: {
+            992: { slidesPerView: 6, spaceBetween: 20 },
+            768: { slidesPerView: 4, spaceBetween: 15 },
+            576: { slidesPerView: 2, spaceBetween: 10 },
+            320: { slidesPerView: 2.2, spaceBetween: 8 }
+        }
+    });
+
+    // Fade-in Animation باستخدام IntersectionObserver
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll(".logo-fade").forEach(el => observer.observe(el));
 })(jQuery);
 
