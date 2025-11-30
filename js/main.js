@@ -100,24 +100,6 @@
     });
 
     // Carousel 
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 6,
-        spaceBetween: 20,
-        loop: true,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false,
-        },
-        grabCursor: true,
-        breakpoints: {
-            992: { slidesPerView: 6 },
-            768: { slidesPerView: 4 },
-            576: { slidesPerView: 2 }
-        }
-    });
-
-    // Our Clients Swiper
-    // Carousel 
     const clientsImages = [
         ["awtad.jpg", "اوتاد الفهد للمقاولات"],
         ["albaik-resaurent.png", "سلسلة مطاعم البيك"],
@@ -166,7 +148,6 @@
         }
     });
 
-    // Fade-in Animation باستخدام IntersectionObserver
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -177,4 +158,3 @@
 
     document.querySelectorAll(".logo-fade").forEach(el => observer.observe(el));
 })(jQuery);
-
